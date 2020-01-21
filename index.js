@@ -26,3 +26,11 @@ function increaseRankBy(n) {
         element1.textContent = number;
     }
 }
+
+function societyName(nameList) {
+    for (let index = 0; index < nameList.length; index++) {
+        const element = nameList[index];
+        const initial = element.charAt(0);
+        return initial;
+    }
+}
