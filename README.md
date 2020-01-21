@@ -19,7 +19,7 @@ that are useful for navigating the DOM: `querySelector()` and
 
 ### `querySelector()`
 
-`querySelector()` takes one argument, a string of [selectors][selectors], and
+To review, `querySelector()` takes one argument, a string of [selectors][selectors], and
 returns the first element that matches these selectors. Given a document like
 
 ```html
@@ -95,11 +95,6 @@ Okay, the second call says, "Starting from `document`, find a `ul` with a
 `className` of `unranked-list`. Then find an `li` descended from
 `ul.unranked- list` and a `div` descended from that `li`."
 
-### Interlude: Selectors
-
-Now is probably a good time to brush up on [selectors][selectors]. Play around
-on the MDN page, then come back when you're ready.
-
 ### `querySelectorAll()`
 
 `querySelectorAll` works a lot like `querySelector()` — it accepts a selector
@@ -123,8 +118,9 @@ Given a document like
 </main>
 ```
 
-If we called `document.getElementById('app').querySelectorAll('ul.ranked-list li')`, we'd get back a list of Nodes corresponding to `<li>1</li>`,
-`<li>2</li>`, `<li>10</li>`, `<li>11</li>`, we could change the content of these
+If we called `document.getElementById('app').querySelectorAll('ul.ranked-list li')`, 
+we'd get back a list of Nodes corresponding to `<li>1</li>`,
+`<li>2</li>`, `<li>10</li>`, `<li>11</li>`. We could change the content of these
 `li`s like so:
 
 ```javascript
@@ -143,6 +139,11 @@ from 1 to 4.
 Using this loop construct, we could even, say, call `querySelector()` or
 `querySelectorAll()` on these children to look deeper and deeper into a nested
 structure... (hint!).
+
+### Resource: Selectors
+
+You may want to refer to the MDN page on [selectors][selectors] to help you with 
+this exercise.
 
 ## Instructions
 
@@ -171,9 +172,6 @@ testing against this document, but you should still write your code in
 generic; we don't expect it to work in every case. For example, we know that
 `div#grand-node` has only one node at each level — for this lab, you can solve
 for that case, and not worry about a case where there are sibling nodes.
-
-**ADDITIONAL HINT**: Remember learning about breadth-first search? A similar
-technique might come in handy here.
 
 ## Resources
 
