@@ -34,3 +34,16 @@ function societyName(nameList) {
         return initial;
     }
 }
+
+function chatroomStatus(n) {
+    if(n.length == 0) {
+        return console.log('no one online');
+    } else if (n.length == 1) {
+        return console.log(n + " online");
+    } else if (n.length == 2) {
+        return console.log(n[0] + ' and ' + n[1] + ' online');
+    } else if (n.length > 2) {
+        return console.log(n[0] + ', ' + n[1] + ' and ' +(n.length - 2) + " more online");
+        }
+}
+
