@@ -161,14 +161,14 @@ testing against this document, but you should still write your code in
   elements.)
 
 - Define a function `increaseRankBy(n)` that increases the ranks in all of the
-  `.ranked-list`s by `n`. (You might need to make use of [`parseInt()`][parseint]
+  `.ranked-list`s by `n`. 
 
 - Define a function `deepestChild()` that pulls out the most deeply nested child
   from `div#grand-node`. (Remember, you can iterate over elements and call
   `querySelector()` and `querySelectorAll()` on them. This is challenging to
   implement correctly, but not beyond your ability!)
 
-**HINT**: Your solution for `deepestChild()` does not need to be totally
+**NOTE**: Your solution for `deepestChild()` does not need to be totally
 generic; we don't expect it to work in every case. For example, we know that
 `div#grand-node` has only one node at each level — for this lab, you can solve
 for that case, and not worry about a case where there are sibling nodes.
@@ -177,9 +177,7 @@ for that case, and not worry about a case where there are sibling nodes.
 
 - [document.querySelector()](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
 - [document.querySelectorAll()](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll)
-- [parseInt()][parseint]
 - [Selectors][selectors]
 
 [selectors]: https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors
-[parseint]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt
 
