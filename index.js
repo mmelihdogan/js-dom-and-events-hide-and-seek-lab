@@ -47,3 +47,17 @@ function chatroomStatus(n) {
         }
 }
 
+
+function reverseCase(str) {
+    output = "";
+        for (let index = 0; index < str.length; index++) {
+            const char = str[index];
+            if (char == char.toLowerCase()) {
+                output += char.toUpperCase();
+            }
+            if (char == char.toUpperCase()) {
+                output += char.toLowerCase();
+            }
+        }
+        return output;
+    }
